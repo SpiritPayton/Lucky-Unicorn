@@ -32,11 +32,12 @@ def instructions():
     print()
     print("Choose a starting amount to play with - must be between $1 and $10")
     print()
-    print("Then press <enter> to play. You will get a random token which might "
+    print("Then press <enter> to play. You will get a random token"
+          " which might "
           "be a horse, a zebra, a donkey, or a unicorn")
     print()
     print("It costs $1 to play each round but, depending on your prize, you "
-          "could win some of your money back. these are the payout amounts:\n"
+          "could win some money back. These are the payout amounts:\n"
           "\tUnicorn : $5 (balance increases by $4\n"
           "\tHorse : $0.50 (balance decreases by $0.50\n"
           "\tZebra : $0.50 (balance decreases by $0.50\n"
@@ -112,7 +113,8 @@ def generate_token(balance):
             print("\nSorry but you have run out of money")
             play_again = "x"
         else:
-            play_again = input("\nDo you want to play another round?\n<enter> to play "
+            play_again = input("\nDo you want to play another round?\n<enter> "
+                               "to play "
                                "again or 'X' to exit").lower()
         print()
     return balance
