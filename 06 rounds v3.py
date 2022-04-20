@@ -1,11 +1,9 @@
 """Based on 06 rounds v2
 Converting v2 into a function
 """
+
 import random
 
-
-# yes/no checking function
-def yes_no(question_text):...
 
 # function to generate random token
 def generate_token(balance):
